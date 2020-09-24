@@ -17,3 +17,7 @@ Real world todolist application implementations developed using pure and advance
 * Responsive design.
 * Shift up, shift down, edit and delete to-do's.
 * Component based structure.
+
+## Project Preview:
+
+(https://ali-tahir4024.github.io/todolist-app-react/)
