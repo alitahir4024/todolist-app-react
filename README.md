@@ -17,4 +17,4 @@ todo list app develped using reactjs.
 
 ## Project Preview:
 
-https://ali-tahir4024.github.io/todolist-app-react/
+[ToDo App ReactJS](https://alitahir4024.github.io/todolist-app-react/)
