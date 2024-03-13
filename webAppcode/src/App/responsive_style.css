@@ -1,0 +1,107 @@
+@media (min-width: 0px) and (max-width: 425px) {
+  .ToDoListApp {
+    width: 90vw;
+    left: 5vw;
+    border-radius: 10px;
+  }
+
+  .ToDoListApp > header > h1 {
+    font-size: 2rem;
+  }
+
+  .ToDoListApp > header > button > i {
+    font-size: 2rem;
+  }
+
+  .ToDoListApp > ul > li {
+    grid-template-columns: auto auto;
+    width: 95%;
+    margin-left: 5px;
+  }
+
+  .ToDoListApp > ul > li > div:nth-child(1) > button {
+    height: 15px;
+    width: 15px;
+  }
+
+  .ToDoListApp > ul > li > div:nth-child(1) > p {
+    font-size: 1.5rem;
+  }
+
+  .ToDoListApp > ul > li > div > button > i {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .ToDoListApp > footer > input {
+    height: 6vh;
+    width: 48vw;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 1.3rem;
+  }
+
+  .ToDoListApp > footer > input::placeholder {
+    font-size: 1.4rem;
+  }
+
+  .ToDoListApp > footer > button > i {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .ToDoListApp {
+    width: 45vw;
+    left: 27vw;
+    border-radius: 10px;
+  }
+
+  .ToDoListApp > header > h1 {
+    font-size: 2rem;
+  }
+
+  .ToDoListApp > header > button > i {
+    font-size: 2rem;
+  }
+
+  .ToDoListApp > ul > li {
+    grid-template-columns: auto auto;
+    width: 95%;
+    margin-left: 5px;
+  }
+
+  .ToDoListApp > ul > li > div:nth-child(1) > button {
+    height: 15px;
+    width: 15px;
+  }
+
+  .ToDoListApp > ul > li > div:nth-child(1) > p {
+    font-size: 1.5rem;
+  }
+
+  .ToDoListApp > ul > li > div > button > i {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .ToDoListApp > footer > input {
+    height: 6vh;
+    width: 25vw;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 1.3rem;
+  }
+
+  .ToDoListApp > footer > input::placeholder {
+    font-size: 1.4rem;
+  }
+
+  .ToDoListApp > footer > button > i {
+    font-size: 2.5rem;
+  }
+}

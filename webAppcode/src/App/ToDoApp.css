@@ -1,0 +1,238 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.5s;
+  color: inherit;
+  scroll-behavior: smooth;
+  font-family: monospace;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #53abf4;
+}
+
+.ToDoListApp {
+  position: absolute;
+  height: 97vh;
+  width: 32vw;
+  left: 33%;
+  top: 1%;
+  display: grid;
+  grid-template-columns: 0.99fr;
+  grid-template-rows: 15vh 0.99fr 8vh;
+  align-content: space-around;
+  justify-content: space-evenly;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 5px #d4d3d3;
+}
+
+.ToDoListApp > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #d4d3d3;
+}
+
+.ToDoListApp > header > h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #808489;
+}
+
+.ToDoListApp > header > button > i {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #0892d0;
+  transition: all 0.5s;
+}
+
+.ToDoListApp > header > button:hover i {
+  transform: scale(1.05);
+}
+
+.sync-btn:hover {
+  transform: scale(1.05) rotate(360deg);
+}
+
+button {
+  height: 30px;
+  width: 30px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.ToDoListApp > ul {
+  padding-top: 10px;
+  overflow-y: scroll;
+}
+
+.ToDoListApp > ul > li {
+  height: 7.5vh;
+  width: 98%;
+  margin-top: 2vh;
+  margin-left: 3px;
+  display: grid;
+  grid-template-columns: 10vw 13vw;
+  grid-template-rows: 0.99fr;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0px 0px 5px 3px #d4d3d3;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+
+.ToDoListApp > ul > li:hover {
+  transform: translateY(-3%) scale(1.01);
+  cursor: pointer;
+}
+
+.ToDoListApp > ul > li > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ToDoListApp > ul > li > div:nth-child(1) {
+  width: auto;
+  justify-content: flex-start;
+}
+
+.ToDoListApp > ul > li > div:nth-child(1) > p {
+  font-weight: normal;
+  font-size: 1.8rem;
+  color: #323232;
+  padding-left: 10px;
+}
+
+.ToDoListApp > ul > li > div:nth-child(1) > button {
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid #808489;
+  height: 20px;
+  width: 20px;
+}
+
+.ToDoListApp > ul > li > div > button > i {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.ToDoListApp > ul > li > div > button:hover i {
+  transform: scale(1.08);
+}
+
+.edit-btn {
+  color: #808489;
+}
+
+.shift-up-btn,
+.shift-down-btn {
+  color: #0892d0;
+}
+
+.delete-btn {
+  color: red;
+}
+
+.ToDoListApp > footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #d4d3d3;
+  padding-top: 10px;
+}
+
+.ToDoListApp > footer > input {
+  height: 6vh;
+  width: 18vw;
+  margin-left: 2vw;
+  margin-bottom: 2vh;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding-left: 10px;
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: #808489;
+  transition: all 0.5s;
+}
+
+.ToDoListApp > footer > input::placeholder {
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: all 0.5s;
+}
+
+.ToDoListApp > footer > input:focus::placeholder {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.ToDoListApp > footer > button {
+  margin-right: 3.5vw;
+  margin-bottom: 2vh;
+  height: auto;
+  width: auto;
+  transition: all 0.5s;
+}
+
+.ToDoListApp > footer > button > i {
+  font-weight: bold;
+  font-size: 3.3rem;
+  color: #0892d0;
+}
+
+.ToDoListApp > footer > button:hover i {
+  transform: scale(1.05) rotate(360deg);
+}
+
+.customOverlay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+.customModal {
+  height: 20vh;
+  width: 23vw;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+
+.customModal > input {
+  height: 5vh;
+  width: 18vw;
+  border-radius: 5px;
+  border: 1px solid #808489;
+  padding-left: 15px;
+}
+
+.update-btn {
+  height: 7vh;
+  width: 9vw;
+  border: none;
+  margin-top: 30px;
+  background-color: #d4d3d3;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #323232;
+  letter-spacing: 1.3px;
+  border-radius: 5px;
+}
